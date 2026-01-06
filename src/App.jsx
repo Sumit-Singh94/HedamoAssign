@@ -66,7 +66,7 @@ export default function App() {
                 value={query}
                 onChange={e => setQuery(e.target.value)}
                 placeholder="Search by product name"
-                className="flex-1 min-w-[240px] rounded-xl px-4 py-2.5 text-sm bg-white/80
+                className="flex-1 min-w-60 rounded-xl px-4 py-2.5 text-sm bg-white/80
                            border border-slate-200 focus:outline-none focus:ring-2 focus:ring-sky-200"
               />
 
@@ -114,7 +114,7 @@ export default function App() {
                                    focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-200 text-left"
                       >
                         <div className="flex items-start gap-4">
-                          <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-sky-500 to-indigo-500 flex items-center justify-center text-white font-semibold text-lg">
+                          <div className="w-14 h-14 rounded-2xl bg-linear-to-br from-sky-500 to-indigo-500 flex items-center justify-center text-white font-semibold text-lg">
                             {p.name.split(' ').map(n => n[0]).slice(0, 2).join('')}
                           </div>
 

@@ -12,7 +12,7 @@ export default function ProductDetail({ product, onBack }) {
 
       <div className="grid grid-cols-3 gap-6 items-center">
         <div className="col-span-1 flex items-center justify-center">
-          <div className="w-28 h-28 rounded-3xl bg-gradient-to-br from-sky-500 to-indigo-500 flex items-center justify-center text-white font-semibold text-2xl shadow-sm">
+          <div className="w-28 h-28 rounded-3xl bg-linear-to-br from-sky-500 to-indigo-500 flex items-center justify-center text-white font-semibold text-2xl shadow-sm">
             {product.name.split(' ').map(n => n[0]).slice(0, 2).join('')}
           </div>
         </div>
