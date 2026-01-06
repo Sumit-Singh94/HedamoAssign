@@ -44,6 +44,7 @@ The application will be available at:
 http://localhost:5173
 
 Project Structure
+
 src/
  ├─ components/
  │   ├─ ProductDetail.jsx
