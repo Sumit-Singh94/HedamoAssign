@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="240" viewBox="0 0 320 240" preserveAspectRatio="xMidYMid slice">
+  <rect width="320" height="240" rx="16" fill="#F8FAFF" />
+  <g transform="translate(24,24)">
+    <rect width="272" height="192" rx="12" fill="#F1F5F9" />
+    <text x="136" y="110" font-size="36" font-family="Inter, Arial, sans-serif" fill="#0F172A" text-anchor="middle">LED</text>
+  </g>
+</svg>
