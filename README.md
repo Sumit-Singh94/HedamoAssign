@@ -1,20 +1,77 @@
-<<<<<<< HEAD
-# React + Vite
+ <!-- HedamoAssign -->
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React UI assignment implemented with Vite + React and Tailwind CSS.
 
-Currently, two official plugins are available:
+ <!-- Requirements -->
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Node.js (recommended: 18+)
+- npm (comes with Node.js)
 
-## React Compiler
+ <!-- Tech Stack -->
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite (dev server + build tool)
+- Tailwind CSS (via `@tailwindcss/vite`)
 
-## Expanding the ESLint configuration
+<!-- Setup / Run Locally -->
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# HedamoAssign
->>>>>>> ff7ad3fa3efa5459a3660fe5e9c3c05ca33e3f28
+From the repository root:
+
+<!-- bash -->
+npm install
+
+
+Start the development server:
+
+<!-- bash -->
+npm run dev
+
+
+Then open the local URL printed in the terminal (typically `http://localhost:5173`).
+
+ <!-- Build / Preview -->
+
+Create a production build:
+
+<!-- bash -->
+npm run build
+
+
+Preview the production build locally:
+
+<!-- bash -->
+npm run preview
+
+
+ <!-- Lint -->
+
+```bash
+npm run lint
+```
+
+ <!-- Project Structure (high-level) -->
+
+- `src/App.jsx`
+  - Main page with search/filter/sort and product grid
+  - Detail navigation handled via local React state (`selected`)
+- `src/components/*`
+  - `ProductDetail.jsx`, `Skeleton.jsx`, `EmptyState.jsx`
+- `src/data/products.js`
+  - Static product dataset
+- `src/index.css`
+  - Tailwind entry + global background styling (light blue gradient)
+
+ <!-- Implementation Notes / Assumptions -->
+
+- Data is static: Products are loaded from a local JS module (`src/data/products.js`). No API calls.
+- Product count = 5:
+  - The UI caps displayed results to 5 items.
+  - The bundled dataset is also trimmed to 5 items.
+- Search/Filter/Sort behavior:
+  - Search matches `product.name` (case-insensitive substring match).
+  - Filter matches `product.status` when not set to `All`.
+  - Sort options:
+    - `date`: descending by `updatedAt`
+    - `name`: ascending by `name`
+- UI styling:
+  - Uses a light blue gradient background and glass-style cards (`backdrop-blur`) for a cleaner, more “classy” look.
