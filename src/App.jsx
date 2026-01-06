@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
-import { products as DATA } from "./Data/products";
+import { products as DATA } from "./data/products";
 import ProductDetail from "./components/ProductDetail";
 import Skeleton from "./components/Skeleton";
 import EmptyState from "./components/EmptyState";
