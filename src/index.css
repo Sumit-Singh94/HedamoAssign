@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+html {
+  font-family: Inter, system-ui, sans-serif;
+}
+
+ body {
+   background: linear-gradient(135deg, #e0f2fe 0%, #eef2ff 45%, #f8fafc 100%);
+   background-attachment: fixed;
+   color: #0f172a;
+ }
